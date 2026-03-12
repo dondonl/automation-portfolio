@@ -624,8 +624,8 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
       },
       images: [
         {
-          src: "/placeholder-architecture-3.png",
-          alt: "AI Assistant Architecture Diagram",
+          src: "/ai-powered-legal-operations-assistant.png",
+          alt: "AI-Powered Legal Operations Assistant Architecture Diagram",
           title: "System Architecture"
         },
         {
