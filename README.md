@@ -40,29 +40,7 @@ I'm an Automation & AI Systems Engineer specializing in building intelligent wor
 
 ---
 
-## �️ System Architecture
-
-```mermaid
-graph TD
-    A[Client] --> B[Cognito Forms]
-    B --> C[Webhook]
-    C --> D[Bubble.io Backend]
-    D --> E[Data Processing]
-    E --> F[CRM Integration]
-    F --> G[Automated Workflow]
-    
-    style A fill:#e3f2fd
-    style B fill:#ff6b00
-    style C fill:#ff9800
-    style D fill:#ff00ff
-    style E fill:#ff00ff
-    style F fill:#ff00ff
-    style G fill:#4caf50
-```
-
----
-
-## �🏷️ Technology Stack
+## 🏷️ Technology Stack
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20261A6?style=flat-square&logo=react&logoColor=white)

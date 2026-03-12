@@ -116,72 +116,26 @@ const Architecture = () => {
         <ScrollAnimated variants="fadeInUp" delay={0.3}>
           <div className="bg-gradient-to-br from-primary-50 via-blue-50 to-indigo-50 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 rounded-3xl p-12 mb-12 border border-primary-200 dark:border-gray-700">
             <div className="text-center mb-12">
-              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">System Architecture Overview</h3>
+              <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Secure Lead Intake Integration</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-                A modular approach that allows for easy scaling, maintenance, and integration of new technologies
+                Real-time client intake workflow with secure data transmission and automated processing
               </p>
             </div>
             
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-12 mb-12">
-              {architectureLayers.map((layer, index) => (
-                <motion.div
-                  key={index}
-                  className="flex flex-col items-center"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ 
-                    duration: 0.5, 
-                    delay: index * 0.2,
-                    ease: [0.25, 0.1, 0.25, 1]
-                  }}
-                  viewport={{ once: true }}
-                >
-                  <motion.div 
-                    className="bg-white dark:bg-gray-800 rounded-2xl shadow-medium p-8 mb-6 hover:shadow-large transition-all duration-300 group"
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    <div className="text-center mb-4">
-                      <motion.div 
-                        className={`inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br ${layer.color} rounded-2xl text-white mb-4`}
-                        whileHover={{ rotate: 360 }}
-                        transition={{ duration: 0.6 }}
-                      >
-                        {layer.icon}
-                      </motion.div>
-                      <h4 className="text-xl font-bold text-gray-900 dark:text-white">{layer.title}</h4>
-                    </div>
-                    <div className="space-y-2">
-                      {layer.items.map((item, itemIndex) => (
-                        <motion.div
-                          key={itemIndex}
-                          className="bg-gray-50 dark:bg-gray-700 px-4 py-2 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-200 dark:border-gray-600"
-                          initial={{ opacity: 0, x: -10 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ 
-                            duration: 0.3, 
-                            delay: index * 0.2 + itemIndex * 0.1,
-                            ease: [0.25, 0.1, 0.25, 1]
-                          }}
-                          viewport={{ once: true }}
-                        >
-                          {item}
-                        </motion.div>
-                      ))}
-                    </div>
-                  </motion.div>
-                  
-                  {index < architectureLayers.length - 1 && (
-                    <div className="hidden lg:block">
-                      <motion.div
-                        animate={{ x: [0, 5, 0] }}
-                        transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                      >
-                        <ArrowRight className="text-primary-600 dark:text-white" size={32} />
-                      </motion.div>
-                    </div>
-                  )}
-                </motion.div>
-              ))}
+            <div className="flex justify-center mb-12">
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-gray-800 rounded-2xl shadow-large p-8 max-w-4xl w-full"
+              >
+                <img 
+                  src="/secure-lead-intake-diagram.png" 
+                  alt="Secure Lead Intake Integration Architecture Diagram"
+                  className="w-full h-auto rounded-lg"
+                />
+              </motion.div>
             </div>
           </div>
         </ScrollAnimated>
