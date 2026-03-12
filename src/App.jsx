@@ -348,23 +348,26 @@ const Architecture = () => {
 }
 
 const CaseStudyModal = ({ caseStudy, onClose }) => {
+  const [zoomedImage, setZoomedImage] = useState(null)
+  
   if (!caseStudy) return null
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-      <div className="bg-white dark:bg-gray-900 rounded-3xl max-w-5xl max-h-[90vh] overflow-y-auto w-full shadow-large border border-gray-200 dark:border-gray-700">
-        <div className="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 p-8 flex justify-between items-start">
-          <div className="flex-1">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900 dark:text-white">{caseStudy.title}</h2>
-            <p className="text-lg text-gray-700 dark:text-gray-300">{caseStudy.shortDescription}</p>
+    <>
+      <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div className="bg-white dark:bg-gray-900 rounded-3xl max-w-5xl max-h-[90vh] overflow-y-auto w-full shadow-large border border-gray-200 dark:border-gray-700">
+          <div className="sticky top-0 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 p-8 flex justify-between items-start">
+            <div className="flex-1">
+              <h2 className="text-3xl md:text-4xl font-bold mb-3 text-gray-900 dark:text-white">{caseStudy.title}</h2>
+              <p className="text-lg text-gray-700 dark:text-gray-300">{caseStudy.shortDescription}</p>
+            </div>
+            <button
+              onClick={onClose}
+              className="p-3 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-2xl transition-colors ml-6"
+            >
+              <span className="text-2xl text-gray-900 dark:text-white">✕</span>
+            </button>
           </div>
-          <button
-            onClick={onClose}
-            className="p-3 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-2xl transition-colors ml-6"
-          >
-            <span className="text-2xl text-gray-900 dark:text-white">✕</span>
-          </button>
-        </div>
 
         <div className="p-8 space-y-12 bg-white dark:bg-gray-900">
           {/* Overview */}
@@ -395,7 +398,11 @@ const CaseStudyModal = ({ caseStudy, onClose }) => {
             <div className="grid md:grid-cols-2 gap-6">
               {caseStudy.images.map((image, index) => (
                 <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-600 flex flex-col">
-                  <div className="rounded-xl mb-4 overflow-hidden flex-shrink-0" style={{ minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <div 
+                    className="rounded-xl mb-4 overflow-hidden flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity" 
+                    style={{ minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    onClick={() => setZoomedImage(image)}
+                  >
                     <img 
                       src={image.src} 
                       alt={image.alt}
@@ -482,6 +489,31 @@ const CaseStudyModal = ({ caseStudy, onClose }) => {
         </div>
       </div>
     </div>
+
+      {/* Image Zoom Modal */}
+      {zoomedImage && (
+        <div 
+          className="fixed inset-0 bg-black/90 z-[60] flex items-center justify-center p-4"
+          onClick={() => setZoomedImage(null)}
+        >
+          <button
+            onClick={() => setZoomedImage(null)}
+            className="absolute top-6 right-6 p-3 bg-white/10 hover:bg-white/20 rounded-2xl transition-colors"
+          >
+            <span className="text-2xl text-white">✕</span>
+          </button>
+          <motion.img
+            src={zoomedImage.src}
+            alt={zoomedImage.alt}
+            className="max-w-[95%] max-h-[95vh] object-contain rounded-lg"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.2 }}
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
+    </>
   )
 }
 
