@@ -574,8 +574,8 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
       },
       images: [
         {
-          src: "/placeholder-architecture-2.png",
-          alt: "Billing Engine Architecture Diagram",
+          src: "/automated-legal-billing-diagram.png",
+          alt: "Automated Legal Billing Engine Architecture Diagram",
           title: "System Architecture"
         },
         {
