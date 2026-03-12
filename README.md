@@ -133,17 +133,19 @@ graph TD
 - Real-time data retrieval and context-aware responses
 
 ### 4. 🎯 AI Lead Qualification Automation
-**Overview:** AI workflow using Cognito Forms, n8n, and Gemini to classify website inquiries and route qualified leads to appropriate teams.
+**Overview:** AI workflow using Cognito Forms, n8n, Gemini, and SendGrid to classify website inquiries, route qualified leads to appropriate teams, and send personalized intake forms via email.
 
 **Tools Used:**
 - Cognito Forms (Lead Capture)
 - n8n (Workflow Orchestration)
-- Gemini (AI Classification)
+- Gemini AI (AI Classification)
+- SendGrid API (Automated Email Delivery)
 - Custom APIs (Lead Routing)
 
 **Technical Highlights:**
-- AI-powered lead scoring and classification
+- AI-powered lead scoring and classification using Gemini
 - Multi-channel lead routing automation
+- SendGrid API integration for automated intake form delivery
 - Real-time qualification workflows
 - Performance analytics and optimization
 

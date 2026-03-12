@@ -659,22 +659,23 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
     {
       id: 4,
       title: "AI Lead Qualification Automation",
-      shortDescription: "AI workflow using Cognito Forms, n8n, and Gemini to classify website inquiries.",
-      overview: "An intelligent lead qualification system that automatically categorizes and routes incoming inquiries, ensuring high-priority leads receive immediate attention while maintaining detailed tracking.",
+      shortDescription: "AI workflow using Cognito Forms, n8n, Gemini, and SendGrid to classify and route website inquiries.",
+      overview: "An intelligent lead qualification system that automatically categorizes incoming inquiries using AI, routes them to appropriate teams, and sends personalized intake forms via email using SendGrid API triggered by n8n workflows.",
       architecture: {
-        description: "AI-powered workflow automation combining form submissions, machine learning classification, and intelligent routing.",
+        description: "AI-powered workflow automation combining form submissions, machine learning classification, intelligent routing, and automated email delivery.",
         components: [
           "Cognito Forms for lead capture",
-          "n8n workflow orchestration",
-          "Gemini AI for lead classification",
+          "n8n workflow orchestration and automation",
+          "Gemini AI for intelligent lead classification",
+          "SendGrid API for automated email delivery",
           "Automated routing and notifications",
           "CRM integration for tracking"
         ]
       },
       images: [
         {
-          src: "/placeholder-architecture-4.png",
-          alt: "Lead Qualification System Architecture",
+          src: "/ai-lead-qualification-automation-diagram.png",
+          alt: "AI Lead Qualification Automation Architecture Diagram",
           title: "System Architecture"
         },
         {
@@ -684,25 +685,27 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
         }
       ],
       technicalBreakdown: {
-        challenge: "Sales team was spending hours manually reviewing and categorizing incoming leads, resulting in delayed follow-up on high-priority opportunities.",
-        solution: "Implemented an AI-powered system that automatically classifies leads based on content, urgency, and potential value, then routes them appropriately.",
+        challenge: "Sales team was spending hours manually reviewing and categorizing incoming leads, resulting in delayed follow-up on high-priority opportunities and inconsistent intake form delivery.",
+        solution: "Implemented an AI-powered system that automatically classifies leads based on content, urgency, and potential value, then routes them appropriately and sends personalized intake forms via SendGrid API.",
         implementation: [
           "Created custom form fields for better lead data capture",
-          "Integrated Gemini AI for intelligent lead scoring",
-          "Built automated workflows in n8n for processing",
-          "Implemented priority-based routing system",
-          "Added real-time notifications and dashboard"
+          "Integrated Gemini AI for intelligent lead scoring and classification",
+          "Built automated workflows in n8n for processing and orchestration",
+          "Implemented SendGrid API integration for automated intake form delivery",
+          "Developed priority-based routing system",
+          "Added real-time notifications and tracking dashboard"
         ]
       },
-      toolsUsed: ["Cognito Forms", "n8n", "Gemini AI", "REST APIs", "Machine Learning"],
+      toolsUsed: ["Cognito Forms", "n8n", "Gemini AI", "SendGrid API", "REST APIs", "Machine Learning"],
       impact: {
         metrics: [
           "85% reduction in lead processing time",
           "40% increase in lead conversion rate",
           "Immediate response to high-priority leads",
+          "Automated intake form delivery via SendGrid",
           "Improved sales team productivity"
         ],
-        description: "Revolutionized the lead management process, enabling the sales team to focus on high-value opportunities while ensuring no lead falls through the cracks."
+        description: "Revolutionized the lead management process by combining AI classification with automated email delivery, enabling the sales team to focus on high-value opportunities while ensuring no lead falls through the cracks and all qualified leads receive personalized intake forms automatically."
       }
     }
   ]
