@@ -1,0 +1,31 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <text x="200" y="150" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="16">
+    Lead Qualification Architecture
+  </text>
+  <rect x="30" y="30" width="100" height="50" fill="#3b82f6" opacity="0.3" rx="8"/>
+  <rect x="150" y="30" width="100" height="50" fill="#10b981" opacity="0.3" rx="8"/>
+  <rect x="270" y="30" width="100" height="50" fill="#f59e0b" opacity="0.3" rx="8"/>
+  <rect x="30" y="100" width="100" height="50" fill="#ef4444" opacity="0.3" rx="8"/>
+  <rect x="150" y="100" width="100" height="50" fill="#8b5cf6" opacity="0.3" rx="8"/>
+  <rect x="270" y="100" width="100" height="50" fill="#06b6d4" opacity="0.3" rx="8"/>
+  <rect x="90" y="170" width="100" height="50" fill="#84cc16" opacity="0.3" rx="8"/>
+  <rect x="210" y="170" width="100" height="50" fill="#f97316" opacity="0.3" rx="8"/>
+  <text x="80" y="60" text-anchor="middle" fill="#1f2937" font-size="11">Web Form</text>
+  <text x="200" y="60" text-anchor="middle" fill="#1f2937" font-size="11">n8n Trigger</text>
+  <text x="320" y="60" text-anchor="middle" fill="#1f2937" font-size="11">Gemini AI</text>
+  <text x="80" y="130" text-anchor="middle" fill="#1f2937" font-size="11">Classify</text>
+  <text x="200" y="130" text-anchor="middle" fill="#1f2937" font-size="11">Score</text>
+  <text x="320" y="130" text-anchor="middle" fill="#1f2937" font-size="11">Route</text>
+  <text x="140" y="200" text-anchor="middle" fill="#1f2937" font-size="11">High Priority</text>
+  <text x="260" y="200" text-anchor="middle" fill="#1f2937" font-size="11">Standard</text>
+  <path d="M 130 55 L 150 55" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 250 55 L 270 55" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 320 80 L 320 100" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 270 125 L 250 125" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 150 125 L 130 125" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 80 150 L 80 170" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 200 150 L 140 170" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 320 150 L 260 170" stroke="#6b7280" stroke-width="2" fill="none"/>
+  <path d="M 320 80 L 80 100" stroke="#6b7280" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
+</svg>

@@ -1,0 +1,28 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#f3f4f6"/>
+  <text x="200" y="150" text-anchor="middle" fill="#6b7280" font-family="Arial, sans-serif" font-size="16">
+    Lead Intake Workflow
+  </text>
+  <circle cx="80" cy="80" r="30" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="200" cy="80" r="30" fill="#10b981" opacity="0.3"/>
+  <circle cx="320" cy="80" r="30" fill="#f59e0b" opacity="0.3"/>
+  <circle cx="80" cy="180" r="30" fill="#ef4444" opacity="0.3"/>
+  <circle cx="200" cy="180" r="30" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="320" cy="180" r="30" fill="#06b6d4" opacity="0.3"/>
+  <path d="M 110 80 L 170 80" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 230 80 L 290 80" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 80 110 L 80 150" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 110 180 L 170 180" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 230 180 L 290 180" stroke="#6b7280" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <text x="80" y="85" text-anchor="middle" fill="#1f2937" font-size="12">Form</text>
+  <text x="200" y="85" text-anchor="middle" fill="#1f2937" font-size="12">Validate</text>
+  <text x="320" y="85" text-anchor="middle" fill="#1f2937" font-size="12">Process</text>
+  <text x="80" y="185" text-anchor="middle" fill="#1f2937" font-size="12">Store</text>
+  <text x="200" y="185" text-anchor="middle" fill="#1f2937" font-size="12">Notify</text>
+  <text x="320" y="185" text-anchor="middle" fill="#1f2937" font-size="12">Track</text>
+</svg>
