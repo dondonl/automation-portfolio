@@ -40,6 +40,29 @@ I'm an Automation & AI Systems Engineer specializing in building intelligent wor
 
 ---
 
+## 🏷️ Technology Stack
+
+### Frontend
+![React](https://img.shields.io/badge/React-20261A6?style=flat-square&logo=react&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwind-css&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+
+### Automation & Integration
+![n8n](https://img.shields.io/badge/n8n-FF6B35?style=flat-square&logo=n8n&logoColor=white)
+![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=flat-square&logo=zapier&logoColor=white)
+![Bubble.io](https://img.shields.io/badge/Bubble.io-FF00FF?style=flat-square&logo=bubble&logoColor=white)
+
+### AI & NLP
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
+![Dialogflow](https://img.shields.io/badge/Dialogflow-FF9800?style=flat-square&logo=googledialogflow&logoColor=white)
+
+### Platforms
+![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=flat-square&logo=google&logoColor=white)
+![Cognito Forms](https://img.shields.io/badge/Cognito%20Forms-FF6B00?style=flat-square&logo=cognitoforms&logoColor=white)
+
+---
+
 ## 📚 Portfolio Case Studies
 
 ### 1. 🔒 Secure Lead Intake Integration
@@ -125,14 +148,28 @@ My approach to building automation systems emphasizes:
 - Role-based access control systems
 - Compliance with data protection regulations
 
-**� Scalable Internal Tooling**
+**📈 Scalable Internal Tooling**
 - Modular architecture for easy expansion
 - Performance monitoring and optimization
 - Cloud-native deployment strategies
 
 ---
 
-## � Portfolio Website
+## 🖥 Portfolio Preview
+
+<br>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20261A6?style=for-the-badge&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="TailwindCSS">
+  <img src="https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge" alt="Portfolio Status">
+</div>
+
+<br>
+
+---
+
+## 🌐 Portfolio Website
 
 **Live Portfolio:** [Portfolio Website Link Coming Soon]
 
