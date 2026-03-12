@@ -102,28 +102,6 @@ const About = () => {
             </div>
           ))}
         </div>
-
-        <div className="bg-gradient-to-br from-primary-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-3xl p-12">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Core Expertise Areas</h3>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Specialized skills and capabilities that drive successful automation solutions
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { title: "Workflow Design", description: "Creating efficient, scalable automation workflows" },
-              { title: "System Integration", description: "Connecting disparate systems seamlessly" },
-              { title: "AI Implementation", description: "Integrating AI capabilities into business processes" }
-            ].map((area, index) => (
-              <div key={index} className="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-soft border border-gray-200 dark:border-gray-700">
-                <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{area.title}</h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">{area.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
@@ -132,32 +110,32 @@ const About = () => {
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Automation",
+      title: "Automation & Integration",
       emoji: "⚡",
-      skills: ["n8n", "Zapier", "Make"],
-      description: "Workflow automation platforms",
+      skills: ["JSON", "Make", "n8n", "REST APIs", "Webhooks", "Zapier"],
+      description: "Workflow automation & integration",
       gradient: "from-yellow-400 to-orange-500"
     },
     {
       title: "AI",
       emoji: "🤖",
-      skills: ["OpenAI", "Gemini", "Dialogflow CX", "Windsurf", "Claude Code"],
+      skills: ["Claude Code", "Dialogflow CX", "Gemini", "OpenAI", "Windsurf"],
       description: "Artificial intelligence tools",
       gradient: "from-blue-400 to-indigo-500"
     },
     {
       title: "Platforms",
       emoji: "🌐",
-      skills: ["Bubble.io", "Cognito Forms", "Google Workspace", "Caspio", "Lovable"],
+      skills: ["Bubble.io", "Caspio", "Cognito Forms", "Google Workspace", "Lovable", "Supabase"],
       description: "Development platforms",
       gradient: "from-green-400 to-emerald-500"
     },
     {
-      title: "Integration",
-      emoji: "🔗",
-      skills: ["REST APIs", "Webhooks", "JSON"],
-      description: "Integration technologies",
-      gradient: "from-purple-400 to-pink-500"
+      title: "Development",
+      emoji: "💻",
+      skills: ["MongoDB", "MSSQL", "MySQL", "Node.js", "PostgreSQL", "Python", "Redis"],
+      description: "Programming & databases",
+      gradient: "from-cyan-400 to-blue-500"
     }
   ]
 
