@@ -417,8 +417,12 @@ const CaseStudyModal = ({ caseStudy, onClose }) => {
             <div className="grid md:grid-cols-2 gap-6">
               {caseStudy.images.map((image, index) => (
                 <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-600">
-                  <div className="aspect-video bg-gray-200 dark:bg-gray-700 rounded-xl mb-4 flex items-center justify-center">
-                    <span className="text-lg text-gray-500 dark:text-gray-400">Image Placeholder</span>
+                  <div className="rounded-xl mb-4 overflow-hidden">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="w-full h-auto rounded-lg"
+                    />
                   </div>
                   <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">{image.title}</h4>
                   <p className="text-sm text-gray-600 dark:text-gray-300">{image.alt}</p>
@@ -521,8 +525,8 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
       },
       images: [
         {
-          src: "/placeholder-architecture-1.png",
-          alt: "Lead Intake System Architecture Diagram",
+          src: "/secure-lead-intake-diagram.png",
+          alt: "Secure Lead Intake Integration Architecture Diagram",
           title: "System Architecture"
         },
         {
@@ -605,16 +609,17 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
     {
       id: 3,
       title: "AI-Powered Legal Operations Assistant",
-      shortDescription: "Google Chat bot powered by Dialogflow CX integrated with Bubble Data API.",
-      overview: "An intelligent conversational AI assistant that streamlines legal operations through natural language processing and seamless integration with existing systems.",
+      shortDescription: "Google Chat assistant powered by Dialogflow CX, integrated with Bubble Data API and RAG retrieval layer.",
+      overview: "Deployed a Google Chat assistant powered by Dialogflow CX, integrated with Bubble Data API and a RAG retrieval layer. The assistant can query both relational client data and company SOPs/policy documents stored in Google Cloud Storage, providing real-time, conversational answers while respecting field-level privacy rules.",
       architecture: {
-        description: "Hybrid AI architecture combining Dialogflow CX for natural language processing with custom Bubble.io API integrations.",
+        description: "Hybrid AI architecture combining Dialogflow CX for natural language processing with Bubble Data API integration and RAG system for document retrieval.",
         components: [
-          "Dialogflow CX for intent recognition",
-          "Custom fulfillment webhooks",
-          "Bubble.io Data API integration",
+          "Dialogflow CX for intent recognition and conversation management",
+          "Bubble Data API for relational client data access",
+          "RAG retrieval layer for SOPs and policy documents",
+          "Google Cloud Storage for document storage",
           "Google Chat interface",
-          "Knowledge base integration"
+          "Field-level privacy rules enforcement"
         ]
       },
       images: [
@@ -630,25 +635,25 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
         }
       ],
       technicalBreakdown: {
-        challenge: "Legal team needed quick access to case information and procedural guidance without navigating multiple systems.",
-        solution: "Created an AI-powered chat assistant that understands natural language queries and retrieves information from integrated systems in real-time.",
+        challenge: "Legal team needed quick access to both client data and company policies without navigating multiple systems, while maintaining strict privacy controls.",
+        solution: "Created an AI-powered chat assistant with direct API integration that queries relational data and retrieves policy documents using RAG, all through a conversational interface with enforced privacy rules.",
         implementation: [
-          "Designed conversation flows for common legal queries",
-          "Integrated Dialogflow CX with Bubble.io backend APIs",
-          "Implemented real-time data retrieval and processing",
-          "Added context-aware response generation",
-          "Created learning system for continuous improvement"
+          "Direct API integration without third-party workflow tools",
+          "Conversational interface to access internal client and policy data",
+          "RAG system for accurate retrieval of SOPs and policies from Google Cloud Storage",
+          "Field-level privacy rules to secure sensitive client information",
+          "Real-time data retrieval and context-aware responses"
         ]
       },
-      toolsUsed: ["Dialogflow CX", "Google Chat", "Bubble.io", "REST APIs", "Natural Language Processing"],
+      toolsUsed: ["Dialogflow CX", "Google Chat", "Bubble Data API", "RAG", "Google Cloud Storage", "REST APIs"],
       impact: {
         metrics: [
-          "75% reduction in information retrieval time",
-          "24/7 availability for basic queries",
-          "Improved team productivity and collaboration",
-          "Enhanced knowledge sharing across the firm"
+          "Direct API integration with no third-party workflow dependencies",
+          "Real-time access to client data and company policies",
+          "Accurate document retrieval through RAG system",
+          "Enhanced security with field-level privacy enforcement"
         ],
-        description: "Transformed how the legal team accesses information, making critical data available instantly through natural conversation while maintaining security and accuracy."
+        description: "Transformed how the legal team accesses information by providing a conversational interface that securely queries both structured client data and unstructured policy documents, maintaining strict privacy controls while delivering instant answers."
       }
     },
     {

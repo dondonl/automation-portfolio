@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import ScrollAnimated from './ScrollAnimated'
 
 const Architecture = () => {
+  console.log('Architecture component is rendering...');
   
   const principles = [
     {
@@ -113,8 +114,7 @@ const Architecture = () => {
         </div>
 
         {/* Architecture Diagram */}
-        <ScrollAnimated variants="fadeInUp" delay={0.3}>
-          <div className="bg-gradient-to-br from-primary-50 via-blue-50 to-indigo-50 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 rounded-3xl p-12 mb-12 border border-primary-200 dark:border-gray-700">
+        <div className="bg-gradient-to-br from-primary-50 via-blue-50 to-indigo-50 dark:from-gray-800 dark:via-gray-700 dark:to-gray-600 rounded-3xl p-12 mb-12 border border-primary-200 dark:border-gray-700">
             <div className="text-center mb-12">
               <h3 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Secure Lead Intake Integration</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
@@ -123,22 +123,13 @@ const Architecture = () => {
             </div>
             
             <div className="flex justify-center mb-12">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-white dark:bg-gray-800 rounded-2xl shadow-large p-8 max-w-4xl w-full"
-              >
-                <img 
-                  src="/secure-lead-intake-diagram.png" 
-                  alt="Secure Lead Intake Integration Architecture Diagram"
-                  className="w-full h-auto rounded-lg"
-                />
-              </motion.div>
+              <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-large p-8 max-w-4xl w-full">
+                <div className="w-full h-32 bg-blue-500 rounded-lg flex items-center justify-center text-white text-2xl font-bold">
+                  IMAGE TEST
+                </div>
+              </div>
             </div>
           </div>
-        </ScrollAnimated>
 
         {/* Benefits Section */}
         <div className="grid md:grid-cols-3 gap-8">

@@ -16,8 +16,8 @@ export const caseStudies = [
     },
     images: [
       {
-        src: "/placeholder-architecture-1.png",
-        alt: "Lead Intake System Architecture Diagram",
+        src: "/secure-lead-intake-diagram.png",
+        alt: "Secure Lead Intake Integration Architecture Diagram",
         title: "System Architecture"
       },
       {

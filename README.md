@@ -40,7 +40,29 @@ I'm an Automation & AI Systems Engineer specializing in building intelligent wor
 
 ---
 
-## 🏷️ Technology Stack
+## �️ System Architecture
+
+```mermaid
+graph TD
+    A[Client] --> B[Cognito Forms]
+    B --> C[Webhook]
+    C --> D[Bubble.io Backend]
+    D --> E[Data Processing]
+    E --> F[CRM Integration]
+    F --> G[Automated Workflow]
+    
+    style A fill:#e3f2fd
+    style B fill:#ff6b00
+    style C fill:#ff9800
+    style D fill:#ff00ff
+    style E fill:#ff00ff
+    style F fill:#ff00ff
+    style G fill:#4caf50
+```
+
+---
+
+## �🏷️ Technology Stack
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20261A6?style=flat-square&logo=react&logoColor=white)
@@ -94,18 +116,21 @@ I'm an Automation & AI Systems Engineer specializing in building intelligent wor
 - Error handling and data validation systems
 
 ### 3. 🤖 AI-Powered Legal Operations Assistant
-**Overview:** Google Chat assistant powered by Dialogflow CX integrated with Bubble Data API for conversational access to internal firm data.
+**Overview:** Google Chat assistant powered by Dialogflow CX, integrated with Bubble Data API and a RAG retrieval layer. The assistant can query both relational client data and company SOPs/policy documents stored in Google Cloud Storage, providing real-time, conversational answers while respecting field-level privacy rules.
 
 **Tools Used:**
 - Dialogflow CX (Conversational AI)
 - Google Chat (Interface)
 - Bubble Data API (Backend Integration)
+- RAG (Document Retrieval)
+- Google Cloud Storage (Document Storage)
 
 **Technical Highlights:**
-- Natural language processing for legal queries
-- Real-time data retrieval from Bubble backend
-- Context-aware conversation flows
-- Integration with multiple internal data sources
+- Direct API integration without third-party workflow tools
+- Conversational interface to access internal client and policy data
+- RAG system for accurate retrieval of SOPs and policies
+- Field-level privacy rules to secure sensitive client information
+- Real-time data retrieval and context-aware responses
 
 ### 4. 🎯 AI Lead Qualification Automation
 **Overview:** AI workflow using Cognito Forms, n8n, and Gemini to classify website inquiries and route qualified leads to appropriate teams.
