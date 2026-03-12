@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useTheme } from './contexts/ThemeContext'
 import { motion } from 'framer-motion'
 import { Heart, Sparkles, ArrowUp } from 'lucide-react'
@@ -1017,25 +1017,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          {/* Back to Top */}
-          <div className="flex justify-center md:justify-end">
-            <motion.button
-              onClick={scrollToTop}
-              className="inline-flex items-center gap-3 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-500 dark:to-primary-600 hover:from-primary-700 hover:to-primary-800 dark:hover:from-primary-600 dark:hover:to-primary-500 text-white px-6 py-3 rounded-2xl transition-all duration-300 shadow-medium hover:shadow-large group"
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <motion.div
-                className="group-hover:-translate-y-1 transition-transform duration-300"
-                whileHover={{ rotate: -45 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
-                <ArrowUp size={20} />
-              </motion.div>
-              <span>Back to Top</span>
-            </motion.button>
-          </div>
         </div>
       </div>
     </footer>
@@ -1044,10 +1025,43 @@ const Footer = () => {
 
 const App = () => {
   const [selectedCaseStudy, setSelectedCaseStudy] = useState(null)
+  const [showBackToTop, setShowBackToTop] = useState(false)
+
+  // Show/hide back to top button based on scroll position
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowBackToTop(window.scrollY > 400)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <ThemeToggle />
+      
+      {/* Fixed Back to Top Button */}
+      <motion.button
+        onClick={scrollToTop}
+        className="fixed bottom-6 right-6 z-50 p-3 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-500 dark:to-primary-600 hover:from-primary-700 hover:to-primary-800 dark:hover:from-primary-600 dark:hover:to-primary-500 text-white rounded-2xl shadow-medium hover:shadow-large transition-all duration-300"
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ 
+          opacity: showBackToTop ? 1 : 0,
+          scale: showBackToTop ? 1 : 0
+        }}
+        whileHover={{ scale: 1.1, y: -2 }}
+        whileTap={{ scale: 0.9 }}
+        style={{ pointerEvents: showBackToTop ? 'auto' : 'none' }}
+        aria-label="Back to top"
+      >
+        <ArrowUp size={24} />
+      </motion.button>
+
       <Hero />
       <About />
       <Architecture />
