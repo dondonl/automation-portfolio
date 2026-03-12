@@ -62,7 +62,7 @@ graph TD
 
 ---
 
-## �🏷️ Technology Stack
+## 🏷️ Technology Stack
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20261A6?style=flat-square&logo=react&logoColor=white)
@@ -72,16 +72,27 @@ graph TD
 ### Automation & Integration
 ![n8n](https://img.shields.io/badge/n8n-FF6B35?style=flat-square&logo=n8n&logoColor=white)
 ![Zapier](https://img.shields.io/badge/Zapier-FF4A00?style=flat-square&logo=zapier&logoColor=white)
-![Bubble.io](https://img.shields.io/badge/Bubble.io-FF00FF?style=flat-square&logo=bubble&logoColor=white)
+![Make](https://img.shields.io/badge/Make-6D00CC?style=flat-square&logo=integromat&logoColor=white)
 
-### AI & NLP
+### AI
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=flat-square&logo=google&logoColor=white)
 ![Dialogflow](https://img.shields.io/badge/Dialogflow-FF9800?style=flat-square&logo=googledialogflow&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-121212?style=flat-square&logo=chainlink&logoColor=white)
 
 ### Platforms
+![Bubble.io](https://img.shields.io/badge/Bubble.io-FF00FF?style=flat-square&logo=bubble&logoColor=white)
 ![Google Workspace](https://img.shields.io/badge/Google%20Workspace-4285F4?style=flat-square&logo=google&logoColor=white)
 ![Cognito Forms](https://img.shields.io/badge/Cognito%20Forms-FF6B00?style=flat-square&logo=cognitoforms&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
+
+### Development
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
 ---
 

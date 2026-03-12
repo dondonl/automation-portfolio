@@ -119,7 +119,7 @@ const Skills = () => {
     {
       title: "AI",
       emoji: "🤖",
-      skills: ["Claude Code", "Dialogflow CX", "Gemini", "OpenAI", "Windsurf"],
+      skills: ["Claude Code", "Dialogflow CX", "Gemini", "LangChain", "LangFlow", "OpenAI", "Windsurf"],
       description: "Artificial intelligence tools",
       gradient: "from-blue-400 to-indigo-500"
     },
