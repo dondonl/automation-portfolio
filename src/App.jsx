@@ -394,12 +394,13 @@ const CaseStudyModal = ({ caseStudy, onClose }) => {
             <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">Implementation</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {caseStudy.images.map((image, index) => (
-                <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-600">
-                  <div className="rounded-xl mb-4 overflow-hidden">
+                <div key={index} className="bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-600 flex flex-col">
+                  <div className="rounded-xl mb-4 overflow-hidden flex-shrink-0" style={{ minHeight: '300px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <img 
                       src={image.src} 
                       alt={image.alt}
                       className="w-full h-auto rounded-lg"
+                      style={{ maxHeight: '400px', objectFit: 'contain' }}
                     />
                   </div>
                   <h4 className="font-semibold mb-2 text-gray-900 dark:text-white">{image.title}</h4>
