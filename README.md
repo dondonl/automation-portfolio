@@ -1,150 +1,157 @@
-# Dondon Longcanaya - Portfolio Website
+# 🤖 Automation & AI Systems Portfolio – Dondon Longcanaya
 
-A modern, professional portfolio website built with React.js showcasing an Automation & AI Systems Engineer's work and expertise.
+A comprehensive portfolio showcasing automation workflows, AI integrations, and SaaS system architectures built with modern low-code platforms and APIs.
 
-## 🚀 Tech Stack
+---
 
-- **React 18** with Vite for fast development
-- **TailwindCSS** for modern, responsive styling
-- **Lucide React** for beautiful icons
-- **Custom animations** and smooth interactions
+## 📋 About Me
 
-## 📁 Project Structure
+I'm an Automation & AI Systems Engineer specializing in building intelligent workflow automation systems, AI-powered internal tools, and scalable SaaS integrations. With expertise in event-driven architectures and API-first design, I transform complex business processes into efficient, automated solutions.
 
-```
-/portfolio
-  /public
-    - placeholder-architecture-1.png
-    - placeholder-workflow-1.png
-    - placeholder-architecture-2.png
-    - placeholder-workflow-2.png
-    - placeholder-architecture-3.png
-    - placeholder-workflow-3.png
-    - placeholder-architecture-4.png
-    - placeholder-workflow-4.png
-  /src
-    /components
-      - Hero.jsx
-      - About.jsx
-      - Skills.jsx
-      - Architecture.jsx
-      - CaseStudies.jsx
-      - Contact.jsx
-      - Footer.jsx
-    /data
-      - caseStudies.js
-    - App.jsx
-    - main.jsx
-    - index.css
-  - package.json
-  - vite.config.js
-  - tailwind.config.js
-  - postcss.config.js
-  - index.html
-```
+**Core Focus Areas:**
+- Workflow automation systems using low-code platforms
+- AI-powered internal tools and conversational interfaces  
+- SaaS integrations connecting multiple business platforms
+- API and webhook-based architectures for seamless data flow
 
-## 🎨 Features
+---
 
-### Sections
-- **Hero**: Eye-catching introduction with call-to-action buttons
-- **About**: Professional overview with expertise areas
-- **Skills & Tools**: Categorized display of technical skills
-- **Architecture Philosophy**: System design approach with visual diagram
-- **Case Studies**: Interactive portfolio with modal details
-- **Contact**: Modern contact cards with multiple channels
-- **Footer**: Professional footer with navigation
+## 🛠️ Skills & Tools
 
-### Interactive Elements
-- Smooth scroll navigation
-- Modal popups for case study details
-- Hover effects and micro-animations
-- Responsive design for all devices
-- Image gallery support for each case study
+### 🔄 Automation
+- **n8n** - Workflow automation and integration platform
+- **Zapier** - Multi-platform automation workflows
+- **Make** - Advanced automation scenarios and API integrations
 
-### Case Studies Included
-1. **Secure Lead Intake Integration** - Bubble.io + Cognito Forms
-2. **Automated Legal Billing Engine** - Google Apps Script automation
-3. **AI-Powered Legal Operations Assistant** - Dialogflow CX + Bubble
-4. **AI Lead Qualification Automation** - Cognito Forms + n8n + Gemini
+### 🧠 AI / NLP
+- **OpenAI** - GPT models for text processing and automation
+- **Gemini** - Google's AI for intelligent document processing
+- **Dialogflow CX** - Conversational AI and chatbot development
 
-## 🛠️ Getting Started
+### 🏗️ Platforms
+- **Bubble.io** - No-code web application development
+- **Cognito Forms** - Advanced form building and data collection
+- **Google Workspace** - Suite automation and Apps Script development
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+### 🔗 Integration
+- **REST APIs** - Custom API development and integration
+- **Webhooks** - Real-time event-driven data synchronization
+- **JSON** - Data structure design and manipulation
 
-### Installation
+---
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-cd portfolio
-```
+## 📚 Portfolio Case Studies
 
-2. Install dependencies:
-```bash
-npm install
-```
+### 1. 🔒 Secure Lead Intake Integration
+**Overview:** Bubble.io + Cognito Forms integration for secure client intake workflows using webhooks and APIs.
 
-3. Start the development server:
-```bash
-npm run dev
-```
+**Tools Used:**
+- Bubble.io (Frontend & Backend)
+- Cognito Forms (Form Builder)
+- Webhooks & APIs (Data Integration)
 
-4. Open your browser and navigate to `http://localhost:5173`
+**Technical Highlights:**
+- Real-time form submission processing
+- Secure data transmission between platforms
+- Automated client onboarding workflows
+- Custom API endpoints for data validation
 
-### Building for Production
+### 2. ⚖️ Automated Legal Billing Engine
+**Overview:** Google Apps Script automation pipeline that converts CSV time-tracking exports into client-ready invoices and financial reports.
 
-```bash
-npm run build
-```
+**Tools Used:**
+- Google Apps Script (Automation Engine)
+- Google Sheets (Data Processing)
+- Google Docs (Document Generation)
 
-The built files will be in the `dist` directory.
+**Technical Highlights:**
+- CSV parsing and data transformation algorithms
+- Automated invoice generation with custom templates
+- Financial report aggregation and analysis
+- Error handling and data validation systems
 
-## 🎯 Customization
+### 3. 🤖 AI-Powered Legal Operations Assistant
+**Overview:** Google Chat assistant powered by Dialogflow CX integrated with Bubble Data API for conversational access to internal firm data.
 
-### Updating Personal Information
-- Edit `Hero.jsx` to update name, title, and tagline
-- Modify `Contact.jsx` for contact information
-- Update `Footer.jsx` for footer content
+**Tools Used:**
+- Dialogflow CX (Conversational AI)
+- Google Chat (Interface)
+- Bubble Data API (Backend Integration)
 
-### Modifying Case Studies
-- Edit `src/data/caseStudies.js` to update project information
-- Replace placeholder images in the `public` directory
-- Add new case studies by extending the array
+**Technical Highlights:**
+- Natural language processing for legal queries
+- Real-time data retrieval from Bubble backend
+- Context-aware conversation flows
+- Integration with multiple internal data sources
 
-### Styling
-- Modify `tailwind.config.js` for theme customization
-- Update `src/index.css` for custom styles and animations
-- Adjust component-specific styles in individual files
+### 4. 🎯 AI Lead Qualification Automation
+**Overview:** AI workflow using Cognito Forms, n8n, and Gemini to classify website inquiries and route qualified leads to appropriate teams.
 
-## 📱 Responsive Design
+**Tools Used:**
+- Cognito Forms (Lead Capture)
+- n8n (Workflow Orchestration)
+- Gemini (AI Classification)
+- Custom APIs (Lead Routing)
 
-The website is fully responsive and optimized for:
-- Desktop (1200px+)
-- Tablet (768px - 1199px)
-- Mobile (320px - 767px)
+**Technical Highlights:**
+- AI-powered lead scoring and classification
+- Multi-channel lead routing automation
+- Real-time qualification workflows
+- Performance analytics and optimization
 
-## 🌟 Design Features
+---
 
-- Modern SaaS-style UI with rounded cards
-- Soft shadows and smooth hover effects
-- Clean typography with proper hierarchy
-- Professional color scheme with primary accent
-- Animated elements and transitions
-- Accessibility-focused semantic HTML
+## 🏗️ System Design Focus
 
-## 🤖 AI Attribution
+My approach to building automation systems emphasizes:
 
-This portfolio website was generated with the assistance of Claude AI, combining modern web development practices with AI-assisted design and implementation.
+**🎯 Event-Driven Workflows**
+- Real-time triggers and automated responses
+- Scalable event processing architectures
+- Minimal latency in data processing
 
-## 📄 License
+**🔌 API-First Integrations**
+- RESTful API design principles
+- Comprehensive error handling and retry logic
+- Version-controlled API interfaces
 
-This project is open source and available under the [MIT License](LICENSE).
+**🤖 AI-Assisted Automation**
+- Intelligent decision-making at workflow junctions
+- Machine learning for process optimization
+- Natural language interfaces for complex systems
+
+**🔐 Secure Data Handling**
+- End-to-end encryption for sensitive data
+- Role-based access control systems
+- Compliance with data protection regulations
+
+**� Scalable Internal Tooling**
+- Modular architecture for easy expansion
+- Performance monitoring and optimization
+- Cloud-native deployment strategies
+
+---
+
+## � Portfolio Website
+
+**Live Portfolio:** [Portfolio Website Link Coming Soon]
+
+*Built with React.js, TailwindCSS, and modern web technologies for optimal performance and user experience.*
+
+---
 
 ## 📞 Contact
 
-For inquiries about this portfolio or collaboration opportunities:
-- Email: dondon.longcanaya@example.com
-- LinkedIn: linkedin.com/in/dondonlongcanaya
-- GitHub: github.com/dondonlongcanaya
+**📧 Email:** don.longcanaya@gmail.com  
+**💼 LinkedIn:** [linkedin.com/in/dondonlongcanaya](https://www.linkedin.com/in/dondonlongcanaya/)  
+**🐙 GitHub:** [github.com/dondonl](https://github.com/dondonl)
+
+---
+
+## 📝 Notes
+
+This portfolio website was generated with the assistance of Claude AI, combining modern web development practices with AI-assisted design and implementation to create a professional showcase of automation and AI engineering expertise.
+
+---
+
+*🚀 Let's build something amazing together!*
