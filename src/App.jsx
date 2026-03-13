@@ -690,8 +690,8 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
           title: "System Architecture"
         },
         {
-          src: "/placeholder-workflow-4.png",
-          alt: "AI Classification Workflow",
+          src: "/ai-lead-qualification-automation-workflow.png",
+          alt: "AI Lead Qualification Automation Workflow Implementation",
           title: "Workflow Implementation"
         }
       ],
