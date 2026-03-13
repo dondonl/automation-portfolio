@@ -541,8 +541,8 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
           title: "System Architecture"
         },
         {
-          src: "/placeholder-workflow-1.png",
-          alt: "Lead Intake Workflow Screenshot",
+          src: "/secure-lead-intake-integration-workflow.png",
+          alt: "Secure Lead Intake Integration Workflow Implementation",
           title: "Workflow Implementation"
         }
       ],
