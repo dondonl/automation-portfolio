@@ -590,8 +590,8 @@ const CaseStudies = ({ selectedCaseStudy, setSelectedCaseStudy }) => {
           title: "System Architecture"
         },
         {
-          src: "/placeholder-workflow-2.png",
-          alt: "Invoice Generation Workflow",
+          src: "/automated-legal-billing-engine-workflow.png",
+          alt: "Automated Legal Billing Engine Workflow Implementation",
           title: "Workflow Implementation"
         }
       ],
