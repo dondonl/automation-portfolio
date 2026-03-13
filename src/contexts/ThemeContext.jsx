@@ -19,8 +19,8 @@ export const ThemeProvider = ({ children }) => {
       if (savedTheme) {
         return savedTheme
       }
-      // Check system preference
-      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+      // Default to light theme
+      return 'light'
     }
     // Default to light theme on server side
     return 'light'
