@@ -18,47 +18,39 @@ I'm an Automation & AI Systems Engineer specializing in building intelligent wor
 
 ## 🛠️ Skills & Tools
 
-### 🔄 Automation
-- **n8n** - Workflow automation and integration platform
-- **Zapier** - Multi-platform automation workflows
+### ⚡ Automation & Integration
+- **JSON** - Data structure design and manipulation
 - **Make** - Advanced automation scenarios and API integrations
-
-### 🧠 AI / NLP
-- **OpenAI** - GPT models for text processing and automation
-- **Gemini** - Google's AI for intelligent document processing
-- **Dialogflow CX** - Conversational AI and chatbot development
-
-### 🏗️ Platforms
-- **Bubble.io** - No-code web application development
-- **Cognito Forms** - Advanced form building and data collection
-- **Google Workspace** - Suite automation and Apps Script development
-
-### 🔗 Integration
+- **n8n** - Workflow automation and integration platform
 - **REST APIs** - Custom API development and integration
 - **Webhooks** - Real-time event-driven data synchronization
-- **JSON** - Data structure design and manipulation
+- **Zapier** - Multi-platform automation workflows
 
----
+### 🤖 AI
+- **Claude Code** - AI-powered coding assistance
+- **Dialogflow CX** - Conversational AI and chatbot development
+- **Gemini** - Google's AI for intelligent document processing
+- **LangChain** - Framework for building LLM applications
+- **LangFlow** - Visual flow-based AI application builder
+- **OpenAI** - GPT models for text processing and automation
+- **Windsurf** - AI development tools
 
-## �️ System Architecture
+### 🌐 Platforms
+- **Bubble.io** - No-code web application development
+- **Caspio** - Low-code database application platform
+- **Cognito Forms** - Advanced form building and data collection
+- **Google Workspace** - Suite automation and Apps Script development
+- **Lovable** - AI-powered app development platform
+- **Supabase** - Open-source Firebase alternative
 
-```mermaid
-graph TD
-    A[Client] --> B[Cognito Forms]
-    B --> C[Webhook]
-    C --> D[Bubble.io Backend]
-    D --> E[Data Processing]
-    E --> F[CRM Integration]
-    F --> G[Automated Workflow]
-    
-    style A fill:#e3f2fd
-    style B fill:#ff6b00
-    style C fill:#ff9800
-    style D fill:#ff00ff
-    style E fill:#ff00ff
-    style F fill:#ff00ff
-    style G fill:#4caf50
-```
+### 💻 Development
+- **MongoDB** - NoSQL database for document storage
+- **MSSQL** - Microsoft SQL Server database management
+- **MySQL** - Relational database management system
+- **Node.js** - JavaScript runtime for server-side development
+- **PostgreSQL** - Advanced relational database
+- **Python** - Programming language for automation and data processing
+- **Redis** - In-memory data structure store
 
 ---
 
@@ -99,52 +91,57 @@ graph TD
 ## 📚 Portfolio Case Studies
 
 ### 1. 🔒 Secure Lead Intake Integration
-**Overview:** Bubble.io + Cognito Forms integration for secure client intake workflows using webhooks and APIs.
+**Overview:** A comprehensive solution that automates the client intake process from initial contact to data storage, ensuring security and compliance while maintaining a seamless user experience.
 
 **Tools Used:**
-- Bubble.io (Frontend & Backend)
-- Cognito Forms (Form Builder)
-- Webhooks & APIs (Data Integration)
+- Cognito Forms (Secure Data Collection)
+- Bubble.io (Backend & API)
+- Webhooks (Real-time Data Transmission)
+- Custom APIs (Data Validation)
 
 **Technical Highlights:**
+- Multi-layered architecture connecting web forms to Bubble.io backend
+- Secure webhook-based data transmission and validation
+- Automated data validation and sanitization
+- Client dashboard for intake tracking
 - Real-time form submission processing
-- Secure data transmission between platforms
-- Automated client onboarding workflows
-- Custom API endpoints for data validation
 
 ### 2. ⚖️ Automated Legal Billing Engine
-**Overview:** Google Apps Script automation pipeline that converts CSV time-tracking exports into client-ready invoices and financial reports.
+**Overview:** An intelligent automation system that transforms time tracking data into professional invoices, reducing billing preparation time from hours to minutes while ensuring accuracy.
 
 **Tools Used:**
-- Google Apps Script (Automation Engine)
+- Google Apps Script (Serverless Automation)
 - Google Sheets (Data Processing)
 - Google Docs (Document Generation)
+- Google Drive (Storage)
 
 **Technical Highlights:**
-- CSV parsing and data transformation algorithms
-- Automated invoice generation with custom templates
-- Financial report aggregation and analysis
-- Error handling and data validation systems
+- Serverless automation using Google Apps Script
+- CSV parsing and validation engine
+- Time entry categorization algorithm
+- Dynamic invoice template system
+- Automated PDF generation
+- 90% reduction in billing preparation time
 
 ### 3. 🤖 AI-Powered Legal Operations Assistant
-**Overview:** Google Chat assistant powered by Dialogflow CX, integrated with Bubble Data API and a RAG retrieval layer. The assistant can query both relational client data and company SOPs/policy documents stored in Google Cloud Storage, providing real-time, conversational answers while respecting field-level privacy rules.
+**Overview:** Deployed a Google Chat assistant powered by Dialogflow CX, integrated with Bubble Data API and a RAG retrieval layer. The assistant can query both relational client data and company SOPs/policy documents stored in Google Cloud Storage, providing real-time, conversational answers while respecting field-level privacy rules.
 
 **Tools Used:**
-- Dialogflow CX (Conversational AI)
+- Dialogflow CX (Natural Language Processing)
 - Google Chat (Interface)
 - Bubble Data API (Backend Integration)
 - RAG (Document Retrieval)
 - Google Cloud Storage (Document Storage)
 
 **Technical Highlights:**
+- Hybrid AI architecture combining Dialogflow CX with Bubble Data API
+- RAG retrieval layer for SOPs and policy documents
+- Field-level privacy rules enforcement
 - Direct API integration without third-party workflow tools
-- Conversational interface to access internal client and policy data
-- RAG system for accurate retrieval of SOPs and policies
-- Field-level privacy rules to secure sensitive client information
 - Real-time data retrieval and context-aware responses
 
 ### 4. 🎯 AI Lead Qualification Automation
-**Overview:** AI workflow using Cognito Forms, n8n, Gemini, and SendGrid to classify website inquiries, route qualified leads to appropriate teams, and send personalized intake forms via email.
+**Overview:** An intelligent lead qualification system that automatically categorizes incoming inquiries using AI, routes them to appropriate teams, and sends personalized intake forms via email using SendGrid API triggered by n8n workflows.
 
 **Tools Used:**
 - Cognito Forms (Lead Capture)
@@ -154,11 +151,12 @@ graph TD
 - Custom APIs (Lead Routing)
 
 **Technical Highlights:**
-- AI-powered lead scoring and classification using Gemini
-- Multi-channel lead routing automation
+- AI-powered workflow automation combining form submissions and machine learning
+- Gemini AI for intelligent lead classification and scoring
+- n8n workflow orchestration and automation
 - SendGrid API integration for automated intake form delivery
-- Real-time qualification workflows
-- Performance analytics and optimization
+- Automated routing and notifications
+- CRM integration for tracking and analytics
 
 ---
 
